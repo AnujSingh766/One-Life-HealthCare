@@ -1,0 +1,22 @@
+.features-section {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.feature-card {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.feature-title {
+  margin-top: 0.5rem;
+}
+
+.feature-description {
+  color: #666;
+}
