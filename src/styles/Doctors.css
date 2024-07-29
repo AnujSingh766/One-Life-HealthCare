@@ -1,5 +1,7 @@
+/* doctors.css */
 .doctors-section {
   padding: 4rem 2rem;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -10,6 +12,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: left;
+  background-color: #f5f5f5;
+  width: calc(33.333% - 2rem); /* Adjust width for 3 columns layout */
 }
 
 .doctor-image {
@@ -19,8 +23,22 @@
 
 .doctor-name {
   margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .doctor-title {
-  color: #666;
+  color: #666666;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .doctor-card {
+    width: calc(50% - 2rem); /* Adjust for 2 columns layout */
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    width: 100%; /* Full width for single column layout */
+  }
 }

@@ -1,3 +1,4 @@
+/* footer.css */
 .footer-container {
   background-color: #333;
   color: #fff;
@@ -42,4 +43,11 @@
 
 .footer-credit {
   font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
 }

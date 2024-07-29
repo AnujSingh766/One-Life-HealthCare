@@ -6,7 +6,8 @@ import logo from '../assets/images/photo.jpg'; // Adjust the path as needed
 const Header = () => (
   <header className="header-container">
     <Link to="/" className="logo-link">
-      <img src={logo} alt="One Life Health Care Logo" className="logo"/>One Life Health Care 
+      <img src={logo} alt="One Life Health Care Logo" className="logo" />
+      <span className="logo-text">One Life Health Care</span>
     </Link>
     <nav className="nav">
       <Link to="/">Home</Link>

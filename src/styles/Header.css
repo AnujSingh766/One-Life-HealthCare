@@ -1,5 +1,6 @@
+/* Header.css */
 .header-container {
-  background: #fff;
+  background: #003366; /* Dark Blue background */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -11,11 +12,18 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #ffffff; /* White text */
 }
 
 .logo {
   height: 50px; /* Adjust size as needed */
   width: auto; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav {
@@ -25,10 +33,43 @@
 .nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #333;
+  color: #ffffff; /* White text */
   font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
 }
 
 .nav a:hover {
-  color: #007bff; /* Adjust hover color as needed */
+  color: #007bff; /* Light Blue on hover */
+  border-bottom: 2px solid #007bff; /* Underline effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
 }

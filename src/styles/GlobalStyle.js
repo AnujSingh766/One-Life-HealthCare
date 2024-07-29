@@ -10,6 +10,19 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
   }
 `;
 
